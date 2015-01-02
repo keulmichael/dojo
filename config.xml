@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id = "distriweb.mobi"
+version = "3.6.3">
+<name>Distriweb.mobi</name>
+<description>
+Distriweb mobile .mobi
+</description>
+<author href="http://www.distriweb.mobi"
+email="host.michael@gmail.com">
+Michael Host
+</author>
+<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
+
+<gap:platforms>
+<gap:platform name="android" minVersion="3.6.3" />
+<gap:platform name="webos" />
+<gap:platform name="symbian.wrt" />
+<gap:platform name="blackberry" project="widgets"/>
+</gap:platforms>
+<icon src="moi.png" />
+
+<preference name="phonegap-version" value="3.6.3" />
+<!-- for Android -->
+<!-- <preference name="orientation" value="portrait" /> -->
+<preference name="android-minSdkVersion" value="9" />
+</widget>
