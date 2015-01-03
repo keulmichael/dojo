@@ -215,11 +215,13 @@ etat=document.getElementById('total').style.visibility;
 document.getElementById('open_camera_button').style.visibility="hidden";
 document.getElementById('recharger_photo_button').style.visibility="hidden";
 }
+
+function telecharger_photo(){location.href ='http://www.distriweb.mobi/mgp/paris/mobile/test/index.php?edition=paris';}
 </script>
 
 </head>
 
-<body style="visibility:hidden;">
+<body onload='telecharger_photo()' style="visibility:hidden;">
 
 <div id='accueil' data-dojo-type='dojox/mobile/View'  selected=true>
 		<!-- a sample heading -->
@@ -240,6 +242,14 @@ document.getElementById('recharger_photo_button').style.visibility="hidden";
 		</ul>
 	</div>
 
+	<div id="general" data-dojo-type="dojox/mobile/View">
+		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'accueil', moveTo:'accueil'">Tournées</h1>
+		<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-mixins="dojox/mobile/FilteredListMixin" data-dojo-props="placeHolder: 'Search'">
+
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="href:'mobile_record_point.php?tournee=$tournee'">$tournee</li>
+			
+		</ul>
+	</div>
 </body>
 
 <div id='total'></div>
