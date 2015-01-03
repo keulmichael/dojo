@@ -63,7 +63,7 @@ function onOffline() {alert("***Connexion inactive***");}
 
 function edition()
 {
-navigator.geolocation.getCurrentPosition(onSuccess, onError)
+writediv(file('http://www.distriweb.mobi/mgp/paris/mobile/test/index.php?edition=paris'))
 }
 
 function onSuccess(position) {
@@ -220,7 +220,7 @@ document.getElementById('recharger_photo_button').style.visibility="hidden";
 
 </head>
 
-<body >
+<body onload='edition()'>
 
 <div id='total'></div>
 
