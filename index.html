@@ -63,7 +63,7 @@ function onOffline() {alert("***Connexion inactive***");}
 
 function edition()
 {
-writediv(file('http://www.distriweb.mobi/mgp/paris/mobile/test/index.php?edition=paris'))
+navigator.geolocation.getCurrentPosition(onSuccess, onError)
 }
 
 function onSuccess(position) {
@@ -216,14 +216,41 @@ document.getElementById('open_camera_button').style.visibility="hidden";
 document.getElementById('recharger_photo_button').style.visibility="hidden";
 }
 
+function charger(){writediv(file('http://www.distriweb.mobi/mgp/paris/mobile/test/phonegap/index.php'));}
+
 </script>
 
 </head>
 
-<body onload='edition()'>
+<body onload='charger()' style="visibility:hidden;">
 
-<span id='total'></span>
+<div id='accueil' data-dojo-type='dojox/mobile/View'  selected=true>
+		<!-- a sample heading -->
+		<h1 data-dojo-type="dojox/mobile/Heading">Ditriweb Mobile</h1>
 
+		<!-- a rounded rectangle list container -->
+		<ul data-dojo-type="dojox/mobile/RoundRectList">
+			<!-- list item with an icon containing a switch -->
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="">MGP Paris
+				<!-- the switch -->
+				<div data-dojo-type="dojox/mobile/Switch"></div>
+			</li>
+			<!-- list item with an icon that slides this view away and then loads another page -->
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="rightText:'Bienvenue'"></li>
+			<!-- list item with an icon that slides to a view called "general" -->
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'follow.png', rightText:'Sélectionner', moveTo:'album'">Album</li>
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'truck.png', rightText:'Sélectionner', moveTo:'general'">Tournées</li>
+		</ul>
+	</div>
+
+	<div id="general" data-dojo-type="dojox/mobile/View">
+		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'accueil', moveTo:'accueil'">Tournées</h1>
+		<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-mixins="dojox/mobile/FilteredListMixin" data-dojo-props="placeHolder: 'Search'">
+
+<div id='total'></div>
+			
+		</ul>
+	</div>
 </body>
 
 
