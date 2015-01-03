@@ -9,8 +9,9 @@
 		};
 	</script>
 	<!-- dojo bootstrap -->
-	<script src="http://www.distriweb.mobi/mgp/paris/dojo/dojo.js"></script>
-        <script src="http://www.distriweb.mobi/mgp/paris/mobile/test/index.js"></script>
+	<script src="/http://www.distriweb.mobi/mgp/paris/dojo/dojo.js"></script>
+	<!-- dojo application code -->
+	<script src="http://www.distriweb.mobi/mgp/paris/mobile/test/index.js"></script>
         <script src="phonegap.js"></script>
         <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
@@ -20,6 +21,24 @@
         <link rel="stylesheet" href="css/camera.css" type="text/css">
 	
 <script type="text/javascript">
+		require(["dojox/mobile/parser", "dojox/mobile/compat", "dojo/domReady!", "dojox/mobile/View", "dojox/mobile/Heading", "dojox/mobile/RoundRectList", "dojox/mobile/ListItem", "dojox/mobile/Switch", "dojox/mobile/RoundRect", "dojox/mobile/RoundRectCategory",  "dojox/mobile/ContentPane", "dojox/mobile/Button", "dojox/mobile/ProgressIndicator", "dojo/_base/xhr", "dojox/mobile/FilteredListMixin", "dojox/mobile/compat", "dojox/form/Uploader", "dojox/mobile/SwapView", "dojox/mobile/PageIndicator"
+		], function (parser) {
+			parser.parse();		
+			
+		});
+
+function lsfProgressIndicator()
+{
+require(["dojo/_base/window", "dojo/_base/xhr", "dojox/mobile/parser", "dojox/mobile/ProgressIndicator"
+], function(win, xhr, parser, ProgressIndicator){
+
+  var prog = new ProgressIndicator({size:40, center:true});
+  win.body().appendChild(prog.domNode);
+prog.start();
+  });
+  return;
+  }   
+  
 function writediv(texte)
      {document.getElementById('total').innerHTML = texte;}
      
