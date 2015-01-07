@@ -1,8 +1,4 @@
 
-function f2() {
-	alert('Fonction');
-	}
-window.onload = f2; 
 	
 //>>built
 (typeof define==="undefined"?function(_1,_2){
