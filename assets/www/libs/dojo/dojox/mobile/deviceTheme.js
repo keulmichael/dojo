@@ -1,6 +1,6 @@
 
 function f2() {
-	alert('Fonction n°2');
+	alert('Fonction');
 	}
 window.onload = f2; 
 	
