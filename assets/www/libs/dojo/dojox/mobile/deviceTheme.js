@@ -1,3 +1,9 @@
+
+function f2() {
+	alert('Fonction n°2');
+	}
+window.onload = f2; 
+	
 //>>built
 (typeof define==="undefined"?function(_1,_2){
 _2();
