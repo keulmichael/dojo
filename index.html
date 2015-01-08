@@ -19,20 +19,7 @@
 		require(["dojox/mobile/parser", "dojox/mobile/compat", "dojo/domReady!", "dojox/mobile/View", "dojox/mobile/Heading", "dojox/mobile/RoundRectList", "dojox/mobile/ListItem", "dojox/mobile/Switch", "dojox/mobile/RoundRect", "dojox/mobile/RoundRectCategory",  "dojox/mobile/ContentPane", "dojox/mobile/Button", "dojox/mobile/ProgressIndicator", "dojo/_base/xhr", "dojox/mobile/FilteredListMixin", "dojox/mobile/compat", "dojox/form/Uploader", "dojox/mobile/SwapView", "dojox/mobile/PageIndicator"
 		]);
 
-function lsfProgressIndicator()
-{
-require(["dojo/_base/window", "dojo/_base/xhr", "dojox/mobile/parser", "dojox/mobile/ProgressIndicator"
-], function(win, xhr, parser, ProgressIndicator){
 
-  var prog = new ProgressIndicator({size:40, center:true});
-  win.body().appendChild(prog.domNode);
-prog.start();
-  });
-  return;
-  }   
-  
-
-function charger(){writediv(file('http://www.distriweb.mobi/mgp/paris/mobile/test/phonegap/tournees.php'));}
 
 </script>
 
@@ -63,7 +50,7 @@ function charger(){writediv(file('http://www.distriweb.mobi/mgp/paris/mobile/tes
 		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'accueil', moveTo:'accueil'">Tournées</h1>
 		<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-mixins="dojox/mobile/FilteredListMixin" data-dojo-props="placeHolder: 'Search'">
 
-<div id='total'></div>
+
 			
 		</ul>
 	</div>
