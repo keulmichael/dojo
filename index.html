@@ -1,27 +1,26 @@
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="dojox/mobile/themes/iphone/iphone.css"></link>
-	<script type="text/javascript" src="dojox/mobile/deviceTheme.js" data-dojo-config="mblThemeFiles: ['base','Button']"></script>
-
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<title>	Distriweb Mobile </title>
+<link rel="stylesheet" type="text/css" href="http://www.distriweb.mobi/mgp/paris/dojox/mobile/themes/iphone/iphone.css"></link>
+	<script type="text/javascript" src="http://www.distriweb.mobi/mgp/paris/dojox/mobile/deviceTheme.js" data-dojo-config="mblThemeFiles: ['base','Button']"></script>
+	<script type="text/javascript" src="http://www.distriweb.mobi/mgp/paris/dojox/mobile/deviceTheme.js" data-dojo-config="mblThemeFiles: ['base','IconContainer']"></script>
 	<script>
 		dojoConfig = {
 			async: true,
-			parseOnLoad: true
+			parseOnLoad: false
 		};
 	</script>
 	<!-- dojo bootstrap -->
-<script src="dojo/dojo.js"></script>
+	<script src="http://www.distriweb.mobi/mgp/paris/dojo/dojo.js"></script>
 	<!-- dojo application code -->
+	<script src="http://www.distriweb.mobi/mgp/paris/mobile/test/index.js"></script>
 
-
-	
-<script type="text/javascript">
-		require(["dojox/mobile/parser", "dojox/mobile/compat", "dojo/domReady!", "dojox/mobile/View", "dojox/mobile/Heading", "dojox/mobile/RoundRectList", "dojox/mobile/ListItem", "dojox/mobile/Switch", "dojox/mobile/RoundRect", "dojox/mobile/RoundRectCategory",  "dojox/mobile/ContentPane", "dojox/mobile/Button", "dojox/mobile/ProgressIndicator", "dojo/_base/xhr", "dojox/mobile/FilteredListMixin", "dojox/mobile/compat", "dojox/form/Uploader", "dojox/mobile/SwapView", "dojox/mobile/PageIndicator"
-		]);
-
-
-
-</script>
+<link rel="stylesheet" type="text/css" href="http://www.distriweb.mobi/mgp/paris/dojox/mobile/themes/iphone/iphone.css"></link>
+<link href="http://www.distriweb.mobi/mgp/paris/dojox/mobile/themes/common/domButtons/DomButtonRedBadge.css" rel="stylesheet"/>
 
 </head>
 
@@ -41,21 +40,12 @@
 			<!-- list item with an icon that slides this view away and then loads another page -->
 			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="rightText:'Bienvenue'"></li>
 			<!-- list item with an icon that slides to a view called "general" -->
-			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'follow.png', rightText:'Sélectionner', moveTo:'album'">Album</li>
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'screen.png', rightText:'Sélectionner', moveTo:'album'">Album</li>
 			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'truck.png', rightText:'Sélectionner', moveTo:'general'">Tournées</li>
 		</ul>
-	</div>
 
-	<div id="general" data-dojo-type="dojox/mobile/View">
-		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'accueil', moveTo:'accueil'">Tournées</h1>
-		<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-mixins="dojox/mobile/FilteredListMixin" data-dojo-props="placeHolder: 'Search'">
+</div>
 
 
-			
-		</ul>
-	</div>
 </body>
-
-
-
-</html> 
+</html>
