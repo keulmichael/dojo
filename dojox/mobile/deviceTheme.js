@@ -17,7 +17,7 @@ for(var i=0;i<_8.length;i++){
 var n=_8[i];
 var _9=n.getAttribute("src")||"";
 if(_9.match(/\/deviceTheme\.js/i)){
-_3.baseUrl=_9.replace("deviceTheme.js","../../dojo/");
+_3.baseUrl=_9.replace("deviceTheme.js","../dojo/");
 var _a=(n.getAttribute("data-dojo-config")||n.getAttribute("djConfig"));
 if(_a){
 var _b=eval("({ "+_a+" })");
