@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="dojox/mobile/themes/android/android.css"></link>
+<link rel="stylesheet" type="text/css" href="dojox/mobile/themes/iphone/iphone.css"></link>
 	<script type="text/javascript" src="dojox/mobile/deviceTheme.js" data-dojo-config="mblThemeFiles: ['base','Button']"></script>
 
 	<script>
@@ -223,7 +223,7 @@ function charger(){writediv(file('http://www.distriweb.mobi/mgp/paris/mobile/tes
 
 </head>
 
-<body style="visibility:hidden;">
+<body >
 
 <div id='accueil' data-dojo-type='dojox/mobile/View'  selected=true>
 		<!-- a sample heading -->
@@ -239,13 +239,13 @@ function charger(){writediv(file('http://www.distriweb.mobi/mgp/paris/mobile/tes
 			<!-- list item with an icon that slides this view away and then loads another page -->
 			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="rightText:'Bienvenue'"></li>
 			<!-- list item with an icon that slides to a view called "general" -->
-			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'follow.png', rightText:'Sélectionner', moveTo:'album'">Album</li>
-			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'truck.png', rightText:'Sélectionner', moveTo:'general'">Tournées</li>
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'follow.png', rightText:'SÃ©lectionner', moveTo:'album'">Album</li>
+			<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="icon:'truck.png', rightText:'SÃ©lectionner', moveTo:'general'">TournÃ©es</li>
 		</ul>
 	</div>
 
 	<div id="general" data-dojo-type="dojox/mobile/View">
-		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'accueil', moveTo:'accueil'">Tournées</h1>
+		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="back:'accueil', moveTo:'accueil'">TournÃ©es</h1>
 		<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-mixins="dojox/mobile/FilteredListMixin" data-dojo-props="placeHolder: 'Search'">
 
 <div id='total'></div>
